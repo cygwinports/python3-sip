@@ -1,0 +1,91 @@
+sip
+-------------------------------------------
+SIP is a tool that makes it very easy to create Python bindings for C 
+and C++ libraries. It was originally developed to create PyQt, the 
+Python bindings for the Qt toolkit, but can be used to create bindings 
+for any C or C++ library.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  python-2.4.3-1
+
+Build requirements:
+  cygwin-1.5.20-1
+  binutils-20050610-1
+  cygport-0.2.1-1
+  gcc-core-3.4.4-1
+  gcc-g++-3.4.4-1
+  make-3.80-1
+  python-2.4.3-1
+
+Canonical homepage:
+  http://www.riverbankcomputing.co.uk/sip/
+
+Canonical download:
+  http://www.river-bank.demon.co.uk/download/sip/
+
+-------------------------------------------
+
+Build instructions:
+  unpack sip-4.4.5-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./sip-4.4.5-X.cygport all
+
+This will create:
+  /usr/src/sip-4.4.5-X-src.tar.bz2
+  /usr/src/sip-4.4.5-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/sip.exe
+  /usr/include/python2.4/sip.h
+  /usr/lib/python2.4/site-packages/sip.dll
+  /usr/lib/python2.4/site-packages/sipconfig.py
+  /usr/lib/python2.4/site-packages/sipconfig.pyc
+  /usr/lib/python2.4/site-packages/sipconfig.pyo
+  /usr/lib/python2.4/site-packages/sipdistutils.py
+  /usr/lib/python2.4/site-packages/sipdistutils.pyc
+  /usr/lib/python2.4/site-packages/sipdistutils.pyo
+  /usr/share/doc/Cygwin/sip-4.4.5.README
+  /usr/share/doc/sip-4.4.5/ChangeLog
+  /usr/share/doc/sip-4.4.5/LICENSE
+  /usr/share/doc/sip-4.4.5/NEWS
+  /usr/share/doc/sip-4.4.5/README
+  /usr/share/doc/sip-4.4.5/THANKS
+  /usr/share/doc/sip-4.4.5/TODO
+  /usr/share/doc/sip-4.4.5/html/default.css
+  /usr/share/doc/sip-4.4.5/html/sipref.html
+  /usr/share/doc/sip-4.4.5/sipref.txt
+
+------------------
+
+Port Notes:
+
+----- version 4.4.5-1 -----
+Version bump.
+
+----- version 4.4.3-1 -----
+Version bump; build patches accepted upstream.
+
+----- version 4.3.2-2 -----
+Rebuilt for qt-3.3.5.
+
+----- version 4.3.2-1 -----
+Version bump.
+
+----- version 4.3.1-1 -----
+Version bump.
+
+----- version 4.2.1-1 -----
+Version bump.
+
+----- version 4.1.1-1 -----
+Initial release for the Cygwin Ports release of qt3.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
