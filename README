@@ -6,16 +6,16 @@ Python bindings for the Qt toolkit, but can be used to create bindings
 for any C or C++ library.
 
 Runtime requirements:
-  cygwin-1.5.20-1
+  cygwin-1.5.23-2
   python-2.4.3-1
 
 Build requirements:
-  cygwin-1.5.20-1
-  binutils-20050610-1
-  cygport-0.2.1-1
-  gcc-core-3.4.4-1
-  gcc-g++-3.4.4-1
-  make-3.80-1
+  cygwin-1.5.23-2
+  binutils-20060817-1
+  cygport-0.2.7-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  make-3.81-1
   python-2.4.3-1
 
 Canonical homepage:
@@ -27,15 +27,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack sip-4.4.5-X-src.tar.bz2
+  unpack sip-4.5.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./sip-4.4.5-X.cygport all
+  cygport ./sip-4.5.2-X.cygport all
 
 This will create:
-  /usr/src/sip-4.4.5-X-src.tar.bz2
-  /usr/src/sip-4.4.5-X.tar.bz2
+  /usr/src/sip-4.5.2-X-src.tar.bz2
+  /usr/src/sip-4.5.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -50,20 +50,23 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/sipdistutils.py
   /usr/lib/python2.4/site-packages/sipdistutils.pyc
   /usr/lib/python2.4/site-packages/sipdistutils.pyo
-  /usr/share/doc/Cygwin/sip-4.4.5.README
-  /usr/share/doc/sip-4.4.5/ChangeLog
-  /usr/share/doc/sip-4.4.5/LICENSE
-  /usr/share/doc/sip-4.4.5/NEWS
-  /usr/share/doc/sip-4.4.5/README
-  /usr/share/doc/sip-4.4.5/THANKS
-  /usr/share/doc/sip-4.4.5/TODO
-  /usr/share/doc/sip-4.4.5/html/default.css
-  /usr/share/doc/sip-4.4.5/html/sipref.html
-  /usr/share/doc/sip-4.4.5/sipref.txt
+  /usr/share/doc/Cygwin/sip-4.5.2.README
+  /usr/share/doc/sip-4.5.2/ChangeLog
+  /usr/share/doc/sip-4.5.2/LICENSE
+  /usr/share/doc/sip-4.5.2/NEWS
+  /usr/share/doc/sip-4.5.2/README
+  /usr/share/doc/sip-4.5.2/THANKS
+  /usr/share/doc/sip-4.5.2/TODO
+  /usr/share/doc/sip-4.5.2/html/default.css
+  /usr/share/doc/sip-4.5.2/html/sipref.html
+  /usr/share/doc/sip-4.5.2/sipref.txt
 
 ------------------
 
 Port Notes:
+
+----- version 4.5.2-1 -----
+Version bump.
 
 ----- version 4.4.5-1 -----
 Version bump.
