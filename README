@@ -12,7 +12,7 @@ Runtime requirements:
 Build requirements:
   cygwin-1.5.24-2
   binutils-20060817-1
-  cygport-0.3.5-1
+  cygport-0.3.7-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
   make-3.81-1
@@ -27,15 +27,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-sip-4.7.1-X-src.tar.bz2
+  unpack python-sip-4.7.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-sip-4.7.1-X.cygport all
+  cygport ./python-sip-4.7.3-X.cygport all
 
 This will create:
-  /usr/src/python-sip-4.7.1-X-src.tar.bz2
-  /usr/src/python-sip-4.7.1-X.tar.bz2
+  /usr/src/python-sip-4.7.3-X-src.tar.bz2
+  /usr/src/python-sip-4.7.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -50,20 +50,23 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/sipdistutils.py
   /usr/lib/python2.5/site-packages/sipdistutils.pyc
   /usr/lib/python2.5/site-packages/sipdistutils.pyo
-  /usr/share/doc/Cygwin/python-sip-4.7.1.README
-  /usr/share/doc/python-sip-4.7.1/ChangeLog
-  /usr/share/doc/python-sip-4.7.1/LICENSE
-  /usr/share/doc/python-sip-4.7.1/NEWS
-  /usr/share/doc/python-sip-4.7.1/README
-  /usr/share/doc/python-sip-4.7.1/THANKS
-  /usr/share/doc/python-sip-4.7.1/TODO
-  /usr/share/doc/python-sip-4.7.1/html/default.css
-  /usr/share/doc/python-sip-4.7.1/html/sipref.html
-  /usr/share/doc/python-sip-4.7.1/sipref.txt
+  /usr/share/doc/Cygwin/python-sip-4.7.3.README
+  /usr/share/doc/python-sip-4.7.3/ChangeLog
+  /usr/share/doc/python-sip-4.7.3/LICENSE
+  /usr/share/doc/python-sip-4.7.3/NEWS
+  /usr/share/doc/python-sip-4.7.3/README
+  /usr/share/doc/python-sip-4.7.3/THANKS
+  /usr/share/doc/python-sip-4.7.3/TODO
+  /usr/share/doc/python-sip-4.7.3/html/default.css
+  /usr/share/doc/python-sip-4.7.3/html/sipref.html
+  /usr/share/doc/python-sip-4.7.3/sipref.txt
 
 ------------------
 
 Port Notes:
+
+----- version 4.7.3-1 -----
+Version bump.
 
 ----- version 4.7.1-1 -----
 Version bump.
