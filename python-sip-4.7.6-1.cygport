@@ -1,0 +1,34 @@
+inherit python
+
+DESCRIPTION="Python bindings generator"
+HOMEPAGE="http://www.riverbankcomputing.co.uk/software/sip/"
+SRC_URI="http://www.riverbankcomputing.com/static/Downloads/sip4/sip-${PV}.tar.gz"
+SRC_DIR="sip-${PV}"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	rm configure.py 
+	cp ${S}/configure.py ${B}
+
+	${PYTHON} configure.py \
+		-p cygwin-g++ \
+		-b /usr/bin \
+		-d ${PYTHON_SITELIB} \
+		-e ${PYTHON_INCLUDEDIR} \
+		"CFLAGS+=${CFLAGS}" "CXXFLAGS+=${CXXFLAGS}" \
+		|| error "configure.py failed"
+
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+	python_optimize ${PYTHON_SITELIB}
+
+	dodoc doc/sipref.txt
+
+	docinto html
+	dodoc doc/default.css doc/sipref.html
+}
