@@ -3,6 +3,8 @@ inherit python
 DESCRIPTION="Python bindings generator"
 HOMEPAGE="http://www.riverbankcomputing.co.uk/software/sip/"
 SRC_URI="http://www.riverbankcomputing.com/static/Downloads/sip4/sip-${PV}.tar.gz"
+PATCH_URI="4.7.6-qt3.patch"
+
 SRC_DIR="sip-${PV}"
 
 src_compile() {
