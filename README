@@ -7,11 +7,11 @@ for any C or C++ library.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  python-2.5.2-3
+  python-2.5.2-4
 
 Additional build requirements:
   binutils-20080523-2
-  cygport-0.3.12-1
+  cygport-0.4.3-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
   make-3.81-1
@@ -25,15 +25,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-sip-4.7.7-X-src.tar.bz2
+  unpack python-sip-4.7.9-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-sip-4.7.7-X.cygport all
+  cygport ./python-sip-4.7.9-X.cygport all
 
 This will create:
-  /usr/src/python-sip-4.7.7-X-src.tar.bz2
-  /usr/src/python-sip-4.7.7-X.tar.bz2
+  /usr/src/python-sip-4.7.9-X-src.tar.bz2
+  /usr/src/python-sip-4.7.9-X.tar.bz2
 
 -------------------------------------------
 
@@ -48,19 +48,22 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/sipdistutils.py
   /usr/lib/python2.5/site-packages/sipdistutils.pyc
   /usr/lib/python2.5/site-packages/sipdistutils.pyo
-  /usr/share/doc/python-sip-4.7.7/ChangeLog
-  /usr/share/doc/python-sip-4.7.7/LICENSE
-  /usr/share/doc/python-sip-4.7.7/NEWS
-  /usr/share/doc/python-sip-4.7.7/README
-  /usr/share/doc/python-sip-4.7.7/THANKS
-  /usr/share/doc/python-sip-4.7.7/TODO
-  /usr/share/doc/python-sip-4.7.7/html/default.css
-  /usr/share/doc/python-sip-4.7.7/html/sipref.html
-  /usr/share/doc/python-sip-4.7.7/sipref.txt
+  /usr/share/doc/python-sip-4.7.9/ChangeLog
+  /usr/share/doc/python-sip-4.7.9/LICENSE
+  /usr/share/doc/python-sip-4.7.9/NEWS
+  /usr/share/doc/python-sip-4.7.9/README
+  /usr/share/doc/python-sip-4.7.9/THANKS
+  /usr/share/doc/python-sip-4.7.9/TODO
+  /usr/share/doc/python-sip-4.7.9/html/default.css
+  /usr/share/doc/python-sip-4.7.9/html/sipref.html
+  /usr/share/doc/python-sip-4.7.9/sipref.txt
 
 ------------------
 
 Port Notes:
+
+----- version 4.7.9-1 -----
+Version bump.
 
 ----- version 4.7.7-1 -----
 Version bump.
