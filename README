@@ -6,21 +6,22 @@ Python bindings for the Qt toolkit, but can be used to create bindings
 for any C or C++ library.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  python-2.5.2-4
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  python-2.5.4-1
 
 Additional build requirements:
-  binutils-20080523-2
-  cygport-0.4.3-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  make-3.81-1
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
 
 Canonical homepage:
-  http://www.riverbankcomputing.co.uk/sip/
+  http://www.riverbankcomputing.co.uk/software/sip/
 
 Canonical download:
-  http://www.river-bank.demon.co.uk/download/sip/
+  http://www.river-bank.demon.co.uk/static/Downloads/sip4/
 
 -------------------------------------------
 
@@ -48,70 +49,22 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/sipdistutils.py
   /usr/lib/python2.5/site-packages/sipdistutils.pyc
   /usr/lib/python2.5/site-packages/sipdistutils.pyo
-  /usr/share/doc/python-sip-4.7.9/ChangeLog
-  /usr/share/doc/python-sip-4.7.9/LICENSE
-  /usr/share/doc/python-sip-4.7.9/NEWS
-  /usr/share/doc/python-sip-4.7.9/README
-  /usr/share/doc/python-sip-4.7.9/THANKS
-  /usr/share/doc/python-sip-4.7.9/TODO
-  /usr/share/doc/python-sip-4.7.9/html/default.css
-  /usr/share/doc/python-sip-4.7.9/html/sipref.html
-  /usr/share/doc/python-sip-4.7.9/sipref.txt
+  /usr/share/doc/python-sip/ChangeLog
+  /usr/share/doc/python-sip/LICENSE
+  /usr/share/doc/python-sip/NEWS
+  /usr/share/doc/python-sip/README
+  /usr/share/doc/python-sip/THANKS
+  /usr/share/doc/python-sip/TODO
+  /usr/share/doc/python-sip/html/default.css
+  /usr/share/doc/python-sip/html/sipref.html
+  /usr/share/doc/python-sip/sipref.txt
 
 ------------------
 
 Port Notes:
 
------ version 4.7.9-1 -----
-Version bump.
-
------ version 4.7.7-1 -----
-Version bump.
-
------ version 4.7.6-1 -----
-Version bump.
-
------ version 4.7.4-1 -----
-Version bump.
-
------ version 4.7.3-1 -----
-Version bump.
-
------ version 4.7.1-1 -----
-Version bump.
-
------ version 4.7-1 -----
-Version bump.
-
------ version 4.6-2 -----
-Rebuilt for python-2.5.
-
------ version 4.6-1 -----
-Version bump. Renamed package to python-sip.
-
------ version 4.5.2-1 -----
-Version bump.
-
------ version 4.4.5-1 -----
-Version bump.
-
------ version 4.4.3-1 -----
-Version bump; build patches accepted upstream.
-
------ version 4.3.2-2 -----
-Rebuilt for qt-3.3.5.
-
------ version 4.3.2-1 -----
-Version bump.
-
------ version 4.3.1-1 -----
-Version bump.
-
------ version 4.2.1-1 -----
-Version bump.
-
------ version 4.1.1-1 -----
-Initial release for the Cygwin Ports release of qt3.
+----- version 4.7.9-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
