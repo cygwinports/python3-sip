@@ -6,9 +6,9 @@ Python bindings for the Qt toolkit, but can be used to create bindings
 for any C or C++ library.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-48
   libgcc1-4.3.2-2
-  python-2.5.4-1
+  python-2.5.4-10
 
 Additional build requirements:
   binutils-20080624-2
@@ -26,15 +26,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-sip-4.7.9-X-src.tar.bz2
+  unpack python-sip-4.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-sip-4.7.9-X.cygport all
+  cygport ./python-sip-4.8-X.cygport all
 
 This will create:
-  /usr/src/python-sip-4.7.9-X-src.tar.bz2
-  /usr/src/python-sip-4.7.9-X.tar.bz2
+  /usr/src/python-sip-4.8-X-src.tar.bz2
+  /usr/src/python-sip-4.8-X.tar.bz2
 
 -------------------------------------------
 
@@ -53,15 +53,13 @@ Files included in the binary package:
   /usr/share/doc/python-sip/LICENSE
   /usr/share/doc/python-sip/NEWS
   /usr/share/doc/python-sip/README
-  /usr/share/doc/python-sip/THANKS
-  /usr/share/doc/python-sip/TODO
-  /usr/share/doc/python-sip/html/default.css
-  /usr/share/doc/python-sip/html/sipref.html
-  /usr/share/doc/python-sip/sipref.txt
 
 ------------------
 
 Port Notes:
+
+----- version 4.8-1 -----
+Version bump.
 
 ----- version 4.7.9-10 -----
 Initial release for Cygwin 1.7.

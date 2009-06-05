@@ -28,9 +28,4 @@ src_install() {
 	cd ${B}
 	cyginstall
 	python_optimize ${PYTHON_SITELIB}
-
-	dodoc doc/sipref.txt
-
-	docinto html
-	dodoc doc/default.css doc/sipref.html
 }
