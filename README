@@ -6,13 +6,13 @@ Python bindings for the Qt toolkit, but can be used to create bindings
 for any C or C++ library.
 
 Runtime requirements:
-  cygwin-1.7.0-49
+  cygwin-1.7.0-60
   libgcc1-4.3.2-2
   python-2.5.4-10
 
 Additional build requirements:
-  binutils-20080624-2
-  cygport-0.9.6-1
+  binutils-2.19.51-1
+  cygport-0.9.9-1
   gcc4-core-4.3.2-2
   gcc4-g++-4.3.2-2
   make-3.81-2
@@ -26,15 +26,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-sip-4.8.1-X-src.tar.bz2
+  unpack python-sip-4.8.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-sip-4.8.1-X.cygport all
+  cygport ./python-sip-4.8.2-X.cygport all
 
 This will create:
-  /usr/src/python-sip-4.8.1-X-src.tar.bz2
-  /usr/src/python-sip-4.8.1-X.tar.bz2
+  /usr/src/python-sip-4.8.2-X-src.tar.bz2
+  /usr/src/python-sip-4.8.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -57,6 +57,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 4.8.2-1 -----
+Version bump.
 
 ----- version 4.8.1-1 -----
 Version bump.
