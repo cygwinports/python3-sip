@@ -1,0 +1,36 @@
+inherit python3 qt4
+
+DESCRIPTION="Python bindings generator"
+HOMEPAGE="http://www.riverbankcomputing.co.uk/software/sip/"
+SRC_URI="http://www.riverbankcomputing.com/static/Downloads/sip4/sip-${PV}.tar.gz"
+SRC_DIR="sip-${PV}"
+
+CYGPORT_USE_UNSTABLE_API=1
+src_unpack_hook() {
+	cp -f ${QT4_DATADIR}/mkspecs/${QMAKESPEC}/qmake.conf specs/${QMAKESPEC}
+}
+
+src_compile() {
+	lndirs
+	cd ${B}
+
+	rm configure.py
+	cp ${S}/configure.py .
+
+	${PYTHON3} configure.py \
+		-p ${QMAKESPEC} \
+		-b ${PYTHON3_SITELIB} \
+		-d ${PYTHON3_SITELIB} \
+		-e ${PYTHON3_INCLUDEDIR} \
+		-v /usr/share/${PN} \
+		"CFLAGS+=${CFLAGS}" "CXXFLAGS+=${CXXFLAGS}" \
+		|| error "configure.py failed"
+
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+	python3_optimize
+}
