@@ -1,9 +1,15 @@
 inherit python3 qt4
 
-DESCRIPTION="Python bindings generator"
+CATEGORY="Python"
+SUMMARY="Py3K binding generator"
+DESCRIPTION="SIP is a tool that makes it very easy to create Python
+bindings for C and C++ libraries. It was originally developed to create
+PyQt, the Python bindings for the Qt toolkit, but can be used to create
+bindings for any C or C++ library."
 HOMEPAGE="http://www.riverbankcomputing.co.uk/software/sip/"
 SRC_URI="http://www.riverbankcomputing.com/static/Downloads/sip4/sip-${PV}.tar.gz"
 SRC_DIR="sip-${PV}"
+PATCH_URI="4.13-cygwin-py32.patch"
 
 CYGPORT_USE_UNSTABLE_API=1
 src_unpack_hook() {

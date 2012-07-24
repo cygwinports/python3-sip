@@ -1,0 +1,11 @@
+--- origsrc/sip-4.13.3/siputils.py	2012-04-11 13:53:48.000000000 -0500
++++ src/sip-4.13.3/siputils.py	2012-07-24 04:50:28.916722300 -0500
+@@ -444,6 +444,8 @@ class Makefile:
+                 libdir.append(self.config.py_lib_dir)
+ 
+                 py_lib = "python%u.%u" % ((self.config.py_version >> 16), ((self.config.py_version >> 8) & 0xff))
++                if sys.version_info >= (3, 2, 0):
++                    py_lib += sys.abiflags
+                 libs.append(self.platform_lib(py_lib))
+             elif sys.platform == "win32":
+                 libdir.append(self.config.py_lib_dir)
