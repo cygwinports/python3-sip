@@ -1,5 +1,8 @@
 inherit python3 qt4
 
+NAME="python3-sip"
+VERSION=4.14.2
+RELEASE=1
 CATEGORY="Python"
 SUMMARY="Py3K binding generator"
 DESCRIPTION="SIP is a tool that makes it very easy to create Python
