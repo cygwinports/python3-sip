@@ -1,7 +1,7 @@
 inherit python3 qt4
 
 NAME="python3-sip"
-VERSION=4.14.3
+VERSION=4.14.7
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Py3K binding generator"
